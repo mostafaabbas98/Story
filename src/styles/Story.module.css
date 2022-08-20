@@ -1,0 +1,29 @@
+.story {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid whitesmoke;
+  padding: 0.4rem 0.3rem;
+  cursor: pointer;
+}
+
+.story svg {
+  color: red;
+}
+
+.story__avatar {
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+.story__info {
+  flex: 1;
+  padding-left: 0.5rem;
+}
+
+.story__info h4 {
+  font-size: 13px;
+}
+
+.story__info p {
+  font-size: 11px;
+}

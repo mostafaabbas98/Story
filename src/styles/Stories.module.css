@@ -1,0 +1,49 @@
+.stories {
+  position: relative;
+  height: 100%;
+}
+
+.stories__header {
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.stories__header_avatar {
+  width: 2rem !important;
+  height: 2rem !important;
+  cursor: pointer;
+}
+
+.stories__header__name {
+  font-size: 1.1rem;
+  flex: 1;
+  padding-left: 0.5rem;
+}
+
+.stories__header_logout {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+  cursor: pointer;
+}
+.stories__list {
+  height: 100%;
+  overflow: auto;
+}
+
+.stories_capture {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-size: 2em;
+  cursor: pointer;
+}
