@@ -28,7 +28,7 @@ function StoryPreview() {
   return (
     <div className={styles.preview}>
       <CloseIcon className={styles.preview__close} onClick={closePreview} />
-      <img src={captureStory} alt="" />
+      <img src={captureStory} alt="preview capture story" />
       <div className={styles.preview__send} onClick={sendImage}>
         <p>Send Now</p>
         <SendIcon fontSize="small" className="preview__sendIcon" />

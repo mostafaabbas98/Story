@@ -21,9 +21,10 @@ function Story({ id, read, imageUrl, timestamp, username, profilePic }) {
         src={profilePic}
         referrerPolicy="no-referrer"
         className={styles.story__avatar}
+        alt="user avatar"
       />
       <div className={styles.story__info}>
-        <h4>{username}</h4>
+        <h2>{username}</h2>
         <p>
           {!read && 'Tap to view -'} <ReactTimeago date={date} />
         </p>

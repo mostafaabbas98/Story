@@ -24,7 +24,7 @@ function StoryView() {
     !loading && (
       <div className="storyView" onClick={exit}>
         <PrograssBar exit={exit} />
-        <img src={previewStory} alt="" />
+        <img src={previewStory} alt="view story" />
       </div>
     )
   );

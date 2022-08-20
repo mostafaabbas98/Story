@@ -11,7 +11,7 @@ function Stories() {
   const { currentUser, logout } = useAuth();
   const { stories } = useStory();
   let navigate = useNavigate();
-  console.log(currentUser.photoURL);
+
   return (
     <div className={styles.stories}>
       <div className={styles.stories__header}>
@@ -19,6 +19,7 @@ function Stories() {
           src={currentUser.photoURL}
           referrerPolicy="no-referrer"
           className={styles.stories__header_avatar}
+          alt="User Avatar"
         />
         <h1 className={styles.stories__header__name}>
           {currentUser.displayName || 'Anonymous'}
