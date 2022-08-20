@@ -11,12 +11,13 @@ function Stories() {
   const { currentUser, logout } = useAuth();
   const { stories } = useStory();
   let navigate = useNavigate();
-
+  console.log(currentUser.photoURL);
   return (
     <div className={styles.stories}>
       <div className={styles.stories__header}>
         <Avatar
           src={currentUser.photoURL}
+          referrerPolicy="no-referrer"
           className={styles.stories__header_avatar}
         />
         <h1 className={styles.stories__header__name}>

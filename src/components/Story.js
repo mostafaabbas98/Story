@@ -17,7 +17,11 @@ function Story({ id, read, imageUrl, timestamp, username, profilePic }) {
 
   return (
     <div className={styles.story} onClick={handleOpenStory}>
-      <Avatar src={profilePic} className={styles.story__avatar} />
+      <Avatar
+        src={profilePic}
+        referrerPolicy="no-referrer"
+        className={styles.story__avatar}
+      />
       <div className={styles.story__info}>
         <h4>{username}</h4>
         <p>
